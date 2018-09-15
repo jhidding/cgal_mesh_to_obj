@@ -37,7 +37,7 @@ void write_to_obj(std::ostream &out, Mesh &mesh)
     vertex_map[v] = count;
     ++count;
     auto point = v->point();
-    out << "v " << point << " 0.0\n";
+    out << "v " << point << " 1.0\n";
   }
 
   out << "\n";
